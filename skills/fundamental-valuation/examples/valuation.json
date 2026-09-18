@@ -1,0 +1,124 @@
+{
+  "_example_notice": "Fictional scenario demonstration. No live security, consensus or verified filing is represented.",
+  "as_of": "2026-09-18",
+  "quote_as_of": "2026-09-18",
+  "currency": "USD",
+  "unit": "millions",
+  "price": 10,
+  "current_shares": 100,
+  "market_cap": 1000,
+  "growth_threshold": 0.1,
+  "strict_growth": false,
+  "base": {
+    "fiscal_year": 2025,
+    "fiscal_end": "2025-12-31",
+    "revenue": {
+      "value": 1000,
+      "kind": "reported_actual",
+      "basis": "GAAP",
+      "source": "Synthetic teaching assumption; not a real forecast",
+      "source_date": "2026-09-15"
+    },
+    "net_income": {
+      "value": 100,
+      "kind": "reported_actual",
+      "basis": "GAAP",
+      "source": "Synthetic teaching assumption; not a real forecast",
+      "source_date": "2026-09-15"
+    }
+  },
+  "forecasts": [
+    {
+      "fiscal_year": 2026,
+      "fiscal_end": "2026-12-31",
+      "revenue": {
+        "value": 1200,
+        "kind": "model_scenario",
+        "basis": "GAAP",
+        "source": "Synthetic teaching assumption; not a real forecast",
+        "source_date": "2026-09-15"
+      },
+      "net_income": {
+        "value": 120,
+        "kind": "model_scenario",
+        "basis": "GAAP",
+        "source": "Synthetic teaching assumption; not a real forecast",
+        "source_date": "2026-09-15"
+      }
+    },
+    {
+      "fiscal_year": 2027,
+      "fiscal_end": "2027-12-31",
+      "revenue": {
+        "value": 1440,
+        "kind": "model_scenario",
+        "basis": "GAAP",
+        "source": "Synthetic teaching assumption; not a real forecast",
+        "source_date": "2026-09-15"
+      },
+      "net_income": {
+        "value": 144,
+        "kind": "model_scenario",
+        "basis": "GAAP",
+        "source": "Synthetic teaching assumption; not a real forecast",
+        "source_date": "2026-09-15"
+      }
+    },
+    {
+      "fiscal_year": 2028,
+      "fiscal_end": "2028-12-31",
+      "revenue": {
+        "value": 1728,
+        "kind": "model_scenario",
+        "basis": "GAAP",
+        "source": "Synthetic teaching assumption; not a real forecast",
+        "source_date": "2026-09-15"
+      },
+      "net_income": {
+        "value": 172.8,
+        "kind": "model_scenario",
+        "basis": "GAAP",
+        "source": "Synthetic teaching assumption; not a real forecast",
+        "source_date": "2026-09-15"
+      }
+    }
+  ],
+  "scenarios": [
+    {
+      "name": "bear",
+      "target_date": "2028-12-31",
+      "future_net_income": 110,
+      "future_shares": 130,
+      "fair_pe": 10,
+      "multiple_rationale": "Synthetic lower-growth, higher-risk discount; requires real peer evidence in a live case.",
+      "assumptions": "Weaker sales/margins than base and more financing: 130 million shares."
+    },
+    {
+      "name": "base",
+      "target_date": "2028-12-31",
+      "future_net_income": 150,
+      "future_shares": 120,
+      "fair_pe": 12,
+      "multiple_rationale": "Synthetic mature-business multiple, not a researched market estimate.",
+      "assumptions": "Revenue 1,600 million and 9.375% net margin, 120 million future shares; FY2028 P/E."
+    },
+    {
+      "name": "bull",
+      "target_date": "2028-12-31",
+      "future_net_income": 210,
+      "future_shares": 110,
+      "fair_pe": 16,
+      "multiple_rationale": "Synthetic premium for more durable growth; justify against peers before live use.",
+      "assumptions": "Revenue 1,750 million and 12% net margin; lower dilution than base."
+    },
+    {
+      "name": "no-rerating",
+      "target_date": "2028-12-31",
+      "future_net_income": 150,
+      "future_shares": 120,
+      "fair_pe": 10,
+      "multiple_rationale": "Same P/E as current cap 1,000 / base actual common income 100.",
+      "assumptions": "Same operating/share assumptions as base, no multiple expansion."
+    }
+  ]
+}

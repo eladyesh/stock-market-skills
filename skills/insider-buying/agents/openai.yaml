@@ -1,0 +1,4 @@
+interface:
+  display_name: "Insider Buying"
+  short_description: "Verify insider purchases and buying clusters"
+  default_prompt: "Use $insider-buying to find meaningful recent insider purchases using free public filings."

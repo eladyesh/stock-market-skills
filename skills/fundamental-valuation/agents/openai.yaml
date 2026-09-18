@@ -1,0 +1,4 @@
+interface:
+  display_name: "Fundamental Valuation"
+  short_description: "Screen three-year growth and value future earnings"
+  default_prompt: "Use $fundamental-valuation to find stocks with three years of double-digit growth and estimate fair value."

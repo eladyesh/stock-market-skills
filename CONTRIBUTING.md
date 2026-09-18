@@ -1,39 +1,41 @@
 # Contributing
 
-Keep skills useful as standalone research workflows and maintain clear boundaries between sourced facts, calculations, and judgment.
+Contribute a focused, independently usable workflow for stock discovery or company research. Keep the distinction between facts, assumptions, calculations and judgment clear.
 
-## Add a skill
+## Add or change a skill
 
-1. Create a folder under `skills/` using a short lowercase, hyphenated name.
-2. Add `SKILL.md` with YAML `name` and `description` fields, followed by focused instructions.
-3. Put conditional research detail in `references/` and deterministic reusable code in `scripts/`.
-4. Add optional `agents/openai.yaml` metadata appropriate to the supported host.
-5. Add clearly labeled synthetic examples and meaningful checks for executable calculations.
-6. Update the main README's catalog and usage instructions.
+1. Create `skills/<lowercase-hyphenated-name>/SKILL.md` with YAML `name` and a concise, discriminating `description`. Match the directory name. Avoid triggering on unrelated financial tasks.
+2. Write an actionable workflow with sensible, disclosed defaults and precise evidence requirements. Keep the entry point concise and put conditional detail in local `references/` files.
+3. Add a detailed `README.md` explaining inputs, outputs, free-source routes, limitations, standalone usage and realistic prompts. Include a clearly labeled worked or synthetic example. English instructions with multilingual prompt examples are welcome; research outputs should follow the user's language.
+4. Add `agents/openai.yaml` with quoted display name, 25–64-character short description and a default prompt mentioning `$<skill-name>`. Keep normal implicit discovery enabled unless explicitly intended otherwise.
+5. Give source URLs and retrieval strategies, explain delays/access limits, and distinguish discovery aggregators from original documents. Do not claim to have checked a source you could not read.
+6. Keep every required file inside the skill folder. Other skills may provide optional support, but document a standalone fallback; do not hardcode a user's installed plugin paths.
+7. Add deterministic scripts only for calculations/data handling that benefit from reuse. Keep calculators offline and standard-library-only unless a documented need justifies a dependency. No API keys, personal data, broker exports or credentials in examples.
+8. Add the skill to the main catalog and update any affected migration/source documentation. Preserve original provenance and existing user changes.
 
-Keep the repository, skill instructions, UI metadata, and examples in English. A skill may follow an explicit request to produce research in another language.
+## Research quality
 
-## Research standards
+Follow [RESEARCH_STANDARD.md](docs/RESEARCH_STANDARD.md). In particular:
 
-- Preserve primary-source links, accounting basis, fiscal periods, units, and publication dates.
-- Label original analysis and modeled forecasts separately from actual results, guidance, and consensus.
-- Report the universe actually reviewed and any access failures or missing data.
-- Keep free public-source access as the scanner's default. Document optional dependencies and their limitations.
-- Respect source access rules; do not add paywall bypasses or repeated blocked requests.
-- Do not include personal watchlists, broker exports, authentication tokens, or private research in example files.
-- Avoid universal valuation filters across unrelated sectors.
-- Treat corporate actions, amendments, dilution, and per-share denominators explicitly.
+- Compare like fiscal periods, accounting bases, currencies, share classes and observation windows.
+- Carry publication/filing dates and observation dates separately.
+- Label unavailable data unknown; return a smaller verified set instead of inventing a match.
+- Use declared universe coverage, not an unexplained sample presented as a market-wide scan.
+- Justify valuation multiples and report dilution-aware returns. Do not replace missing consensus with unlabeled extrapolation.
+- Interpret 13F, Form 4, option volume/OI, fund flows and short interest according to their actual definitions.
+- Attribute allegations, public-official disclosures and social claims accurately; seek primary support and counterevidence.
+- The workflows are research-only. A skill does not confer authority to trade, buy data, send messages or schedule monitoring.
 
-## Code and validation
-
-The existing helper uses the Python standard library. Preserve its ability to run without installing packages unless a change has a clear justification and updated setup instructions.
-
-Run:
+## Validation
 
 ```bash
+python3 -m pip install -r requirements-dev.txt
+python3 scripts/validate_repo.py
 python3 -m unittest discover -s tests -v
 ```
 
-For meaningful changes, include a realistic input that exercises the financial behavior. Test invariants and failure cases rather than duplicating the implementation line by line. Do not add live web calls or paid data dependencies to the offline test suite.
+The format check validates YAML/name/metadata, local links and isolation of required SKILL references. It does not prove research quality. For meaningful code changes, test observable financial invariants, missing inputs and invalid data; do not merely assert that a heading or phrase exists.
 
-When publishing changes, explain the problem, the resulting behavior, and how it was validated. Avoid claiming that arithmetic tests establish an investment edge.
+For complex workflow changes, try realistic tasks with raw evidence and examine whether the skill reaches appropriately qualified conclusions. Keep synthetic data visibly synthetic and offline. Do not give an evaluator the intended answer as part of the input.
+
+When submitting a change, describe the research problem, resulting behavior, source assumptions and validation. Do not claim that structure checks or synthetic tests establish live-data coverage or profitable returns.

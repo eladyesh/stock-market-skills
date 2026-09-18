@@ -1,0 +1,4 @@
+interface:
+  display_name: "Institutional Ownership"
+  short_description: "Track funds, public disclosures and large buyers"
+  default_prompt: "Use $institutional-ownership to find significant changes in publicly disclosed institutional holdings."

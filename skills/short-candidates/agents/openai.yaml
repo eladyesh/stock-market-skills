@@ -1,0 +1,4 @@
+interface:
+  display_name: "Short Candidates"
+  short_description: "Research overvaluation, catalysts and short risks"
+  default_prompt: "Use $short-candidates to find evidence-backed short research candidates with valuation scenarios."

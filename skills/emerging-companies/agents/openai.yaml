@@ -1,0 +1,4 @@
+interface:
+  display_name: "Emerging Companies"
+  short_description: "Research young companies, IPOs and profit inflections"
+  default_prompt: "Use $emerging-companies to find emerging listed companies and evaluate their path to profitability."

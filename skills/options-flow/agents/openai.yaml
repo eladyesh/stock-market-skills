@@ -1,0 +1,4 @@
+interface:
+  display_name: "Options Flow"
+  short_description: "Investigate unusual calls and puts with evidence"
+  default_prompt: "Use $options-flow to find unusual call and put activity using free public sources."

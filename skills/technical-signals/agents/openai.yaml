@@ -1,0 +1,4 @@
+interface:
+  display_name: "Technical Signals"
+  short_description: "Screen price, moving averages and unusual volume"
+  default_prompt: "Use $technical-signals to scan for verified moving-average crosses, extremes and volume spikes."

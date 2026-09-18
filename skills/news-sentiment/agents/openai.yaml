@@ -1,0 +1,4 @@
+interface:
+  display_name: "News Sentiment"
+  short_description: "Separate news catalysts from social-market buzz"
+  default_prompt: "Use $news-sentiment to find stocks attracting news and social attention and verify the claims."

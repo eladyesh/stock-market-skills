@@ -1,0 +1,4 @@
+interface:
+  display_name: "Sector Flows"
+  short_description: "Trace sector fund flows and rotation candidates"
+  default_prompt: "Use $sector-flows to compare recent sector flows and identify stocks worth researching."
