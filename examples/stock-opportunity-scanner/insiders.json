@@ -1,0 +1,52 @@
+{
+  "transactions": [
+    {
+      "economic_transaction_id": "X1",
+      "issuer": "SYNTH",
+      "owner": "Alex",
+      "code": "P",
+      "instrument": "COMMON",
+      "shares": 1000,
+      "price": 12,
+      "transaction_date": "2026-08-01",
+      "filing_date": "2026-08-03",
+      "source": "synthetic form",
+      "venue": "private",
+      "notes_reviewed": true,
+      "role": "Director"
+    },
+    {
+      "economic_transaction_id": "X1",
+      "issuer": "SYNTH",
+      "owner": "Joint entity",
+      "code": "P",
+      "instrument": "COMMON",
+      "shares": 1000,
+      "price": 12
+    },
+    {
+      "economic_transaction_id": "X2",
+      "issuer": "SYNTH",
+      "owner": "Blair",
+      "code": "A",
+      "instrument": "COMMON",
+      "shares": 5000,
+      "price": 0
+    },
+    {
+      "economic_transaction_id": "X3",
+      "issuer": "SYNTH",
+      "owner": "Cory",
+      "code": "P",
+      "instrument": "COMMON",
+      "shares": 500,
+      "price": 15,
+      "transaction_date": "2026-08-02",
+      "filing_date": "2026-08-04",
+      "source": "synthetic form",
+      "venue": "open_market",
+      "notes_reviewed": false
+    }
+  ],
+  "_example_notice": "Synthetic demonstration data. Not real securities, filings, transactions, or investment forecasts."
+}

@@ -1,0 +1,15 @@
+{
+  "pre_shares": 100,
+  "pre_price": 20,
+  "new_shares": 20,
+  "offer_price": 12,
+  "fees": 4,
+  "post_price": 16,
+  "pre_cash": 100,
+  "pre_debt": 300,
+  "debt_repaid": 150,
+  "sources": [
+    "synthetic financing case"
+  ],
+  "_example_notice": "Synthetic demonstration data. Not real securities, filings, transactions, or investment forecasts."
+}

@@ -1,0 +1,40 @@
+{
+  "as_of": "2026-09-18",
+  "rows": [
+    {
+      "ticker": "SYNTH",
+      "sector": "Technology",
+      "price": 20,
+      "price_as_of": "2026-09-17",
+      "revenue_start": 1000,
+      "revenue_end": 1728,
+      "history_years": 3,
+      "eps_start": -1,
+      "eps_end": 2,
+      "shares_start": 100,
+      "shares_end": 150,
+      "price_return": -0.2,
+      "benchmark_return": -0.05,
+      "revenue_yoy": 0.2,
+      "operating_profit_yoy": 0.1,
+      "eps_forward": 3,
+      "forecast_basis": "model_scenario",
+      "market_cap": 3000,
+      "fcf": 100,
+      "net_debt": 200,
+      "ebitda": 100,
+      "sources": [
+        "synthetic statement"
+      ]
+    },
+    {
+      "ticker": "SYNBANK",
+      "sector": "Financial Services",
+      "price": 10,
+      "eps_end": 1,
+      "net_debt": 500,
+      "ebitda": 100
+    }
+  ],
+  "_example_notice": "Synthetic demonstration data. Not real securities, filings, transactions, or investment forecasts."
+}

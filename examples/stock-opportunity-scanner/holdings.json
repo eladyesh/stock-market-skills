@@ -1,0 +1,48 @@
+{
+  "manager": "Synthetic Active Manager",
+  "prior_as_of": "2026-03-31",
+  "current_as_of": "2026-06-30",
+  "current_filed_at": "2026-08-14",
+  "complete_prior": true,
+  "complete_current": false,
+  "prior_to_current_share_factors": {
+    "ABC": 2
+  },
+  "prior": [
+    {
+      "security_id": "ABC",
+      "class": "A",
+      "instrument": "SHARE",
+      "shares": 100,
+      "value": 1000,
+      "source": "synthetic Q1"
+    },
+    {
+      "security_id": "ZZZ",
+      "class": "A",
+      "instrument": "SHARE",
+      "shares": 20,
+      "value": 200,
+      "source": "synthetic Q1"
+    }
+  ],
+  "current": [
+    {
+      "security_id": "ABC",
+      "class": "A",
+      "instrument": "SHARE",
+      "shares": 200,
+      "value": 2000,
+      "source": "synthetic Q2"
+    },
+    {
+      "security_id": "ABC",
+      "class": "A",
+      "instrument": "CALL",
+      "shares": 50,
+      "value": 500,
+      "source": "synthetic Q2"
+    }
+  ],
+  "_example_notice": "Synthetic demonstration data. Not real securities, filings, transactions, or investment forecasts."
+}
